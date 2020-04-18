@@ -7,10 +7,10 @@ Scan your repo for secrets. AWS tokens, keys, this has you covered.
 ```
 workflow "Find Secrets" {
   on = "push"
-  resolves = ["max/secret-scan"]
+  resolves = ["jlamande/secret-scan"]
 }
 
 action "max/secret-scan" {
-  uses = "max/secret-scan@master"
+  uses = "jlamande/secret-scan@master"
 }
 ```
